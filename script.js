@@ -1,4 +1,4 @@
-// Simuliert das Eintippen eines Befehls, dann erscheint die Antwort Zeile für Zeile.
+
 
 const command = "whoami";
 const typedCommandEl = document.getElementById("typed-command");
@@ -17,7 +17,6 @@ function typeCommand(text, i = 0) {
     typedCommandEl.textContent = text.slice(0, i);
     setTimeout(() => typeCommand(text, i + 1), 90);
   } else {
-    // Befehl fertig getippt -> kurze Pause, dann Cursor weg, Ausgabe starten
     setTimeout(() => {
       cursorEl.style.display = "none";
       revealOutput();
@@ -38,7 +37,6 @@ function revealOutput(index = 0) {
   setTimeout(() => revealOutput(index + 1), 450);
 }
 
-// Start, sobald die Seite geladen ist
 window.addEventListener("DOMContentLoaded", () => {
   typeCommand(command);
 });
