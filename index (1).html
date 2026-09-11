@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erdinc Bayalan — Aspiring Web Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <div class="scene">
+
+    <!-- Terminal-Fenster: der zentrale Blickfang -->
+    <section class="terminal" aria-label="Vorstellung">
+      <div class="terminal-bar">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+        <span class="terminal-title">erdinc@portfolio: ~</span>
+      </div>
+      <div class="terminal-body">
+        <p class="line prompt">
+          <span class="path">guest@web</span><span class="colon">:</span><span class="tilde">~$</span>
+          <span id="typed-command"></span><span class="cursor" id="cmd-cursor">▌</span>
+        </p>
+        <div class="output" id="output"></div>
+      </div>
+    </section>
+
+    <!-- Ruhiger Bereich darunter: Tech-Stack -->
+    <section class="panel" id="stack-panel">
+      <h2>tech-stack.json</h2>
+      <ul class="stack-list">
+        <li><span class="key">markup</span><span class="val">HTML5</span></li>
+        <li><span class="key">style</span><span class="val">CSS3</span></li>
+        <li><span class="key">logic</span><span class="val">JavaScript</span></li>
+        <li><span class="key">tools</span><span class="val">Git · GitHub · VS Code</span></li>
+      </ul>
+    </section>
+
+    <!-- Ziele -->
+    <section class="panel" id="goals-panel">
+      <h2>current-goals.md</h2>
+      <ul class="goals-list">
+        <li>Erste eigene Projekte veröffentlichen</li>
+        <li>Best Practices der Softwareentwicklung lernen</li>
+        <li>Jeden Tag ein Stück weiterkommen</li>
+      </ul>
+    </section>
+
+    <!-- Kontakt -->
+    <footer class="contact">
+      <p>Offen für Junior-Dev-Rollen und neue Projekte.</p>
+      <div class="contact-links">
+        <a href="mailto:deine-email@example.com">E-Mail</a>
+        <a href="https://github.com/Erdinc55" target="_blank" rel="noopener">GitHub</a>
+        <!-- WICHTIG: das # unten durch deinen echten LinkedIn-Link ersetzen, z. B. https://linkedin.com/in/dein-name -->
+        <a href="#" id="linkedin-link">LinkedIn</a>
+      </div>
+    </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
