@@ -1,5 +1,3 @@
-
-
 const command = "whoami";
 const typedCommandEl = document.getElementById("typed-command");
 const cursorEl = document.getElementById("cmd-cursor");
