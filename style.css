@@ -34,8 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-/* --- Schwebende Farbverläufe im Hintergrund --- */
-
 .blob {
   position: fixed;
   border-radius: 50%;
@@ -97,8 +95,6 @@ body {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-/* --- Terminal (Hero) --- */
 
 .terminal {
   background: var(--panel-alpha);
@@ -184,8 +180,6 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- Panels --- */
-
 .panel {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -254,8 +248,6 @@ body {
   color: var(--indigo);
 }
 
-/* --- Contact --- */
-
 .contact {
   text-align: center;
   padding: 12px 0 4px;
@@ -294,8 +286,6 @@ body {
   border-color: var(--indigo);
   color: var(--indigo);
 }
-
-/* --- Accessibility & responsiveness --- */
 
 a:focus-visible, button:focus-visible {
   outline: 2px solid var(--indigo);
